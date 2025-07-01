@@ -1,0 +1,18 @@
+<div class="contenedor-cervezas">
+    @for (cerv of cervezas; track cerv.id){
+
+    <div class="contenedor-cerveza">
+
+        <div class="contenedor-info">
+            <p class="nombre">{{cerv.nombre}}</p>
+            <p>{{cerv.info}}</p>
+        </div>
+        
+        <div class="contenedor-img">
+            <img src="imgs/cervezas/{{cerv.img}}.jpg" alt="">
+        </div>
+
+    </div>
+
+    }
+</div>
