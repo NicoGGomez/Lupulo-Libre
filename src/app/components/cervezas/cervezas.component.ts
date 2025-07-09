@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CervezasService, Cerveza } from '../servicios/cervezas.service';
+import { CervezasService, Cerveza } from '../../servicios/cervezas.service';
 
 @Component({
   selector: 'app-cervezas',

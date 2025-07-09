@@ -19,7 +19,7 @@ nav ul li a {
 }
 
 .contenedor-principal {
-    background-image: url(../../../public/imgs/fondo.jpg);
+    background-image: url(../../../../public/imgs/fondo.jpg);
     height: 200px;
     color: #fff;
 }
