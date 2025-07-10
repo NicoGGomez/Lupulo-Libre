@@ -1,4 +1,5 @@
-
+<div class="fondo">
+    
 <div class="contenedor-general">
 
     <div class="contenedor-form">
@@ -7,17 +8,19 @@
             <h2>Contactanos!!!</h2>
         </div>
 
-        <form action="">
+        <form action="" #formulario="ngForm">
 
         <label for="mail">Mail</label>
-        <input id="mail" type="mail" placeholder="Escribe tu mail aquí..." required>
+        <input id="mail" type="mail" name="mail" placeholder="Escribe tu mail aquí..." required>
 
         <label for="mensaje">Mensaje</label>
-        <input id="mensaje" type="text" placeholder="Escribe tu mensaje aquí..." required>
+        <input id="mensaje" type="text" name="mensaje" placeholder="Escribe tu mensaje aquí..." required>
 
-        <input type="submit" value="Enviar">
+        <input [disabled]="!formulario.valid" type="submit" value="Enviar">
     </form>
 
     </div>
+
+</div>
 
 </div>

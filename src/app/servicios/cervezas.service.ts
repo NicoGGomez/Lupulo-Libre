@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 export interface Cerveza {
   id: number;
   nombre: string;
+  graduacion: number;
   img: string;
   info: string;
 }
@@ -21,5 +22,10 @@ export class CervezasService {
 
   getCervezas(): Observable<Cerveza[]> {
   return this.http.get<Cerveza[]>(this.apiUrl);
-}
+  }
+
+  addCerveza(cerveza: Cerveza): Observable<Cerveza> {
+  return this.http.post<Cerveza>(this.apiUrl, cerveza);
+  }
+
 }

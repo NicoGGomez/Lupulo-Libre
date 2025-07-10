@@ -1,24 +1,17 @@
-.contenedor {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-}
-
 .contenedor-general {
     width: 100%;  
-    margin-bottom: 200px;
-}
-
-.contenedor-cervezas {
+    padding-top: 40px;
     display: grid;
     grid-template-columns: auto auto ;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
 }
 
 .contenedor-cerveza {
     max-width: 700px;
-    height: 250px;
+    min-height: 270px;
+    height: fit-content;
+    padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.4);
     font-weight: bold;
     display: grid;
@@ -51,9 +44,56 @@
     border: 1px solid white;
 }
 
+.contenedor-form{
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+.contenedor-form .contenedor-texto {
+    display: grid;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.contenedor-form form {
+    margin-top: 7vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60vh;
+    gap: 2vh;
+    padding: 5vh;
+    font-size: 20px;
+}
+
+.contenedor-form form input, textarea {
+    resize: vertical;
+    height: 4vh;
+    width: 50vh;
+    padding: 3px;
+}
+
+.contenedor-form form textarea {
+    height: 12vh;
+}
+
+
+.contenedor-seccion-form {
+    padding-bottom: 200px;
+}
+
 @media (max-width: 768px) {
-    .contenedor-cervezas {
+    
+    .contenedor-general {
         grid-template-columns: auto;
-        margin: 10px;
+        padding: 20px 10px 0 10px;
     }
+
+    .contenedor-form form {
+        padding: 5vh;
+    }
+
 }

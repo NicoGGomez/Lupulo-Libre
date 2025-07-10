@@ -1,20 +1,50 @@
-<div class="contenedor-general">
-    <div class="contenedor-cervezas">
+<div class="fondo">
+    <div class="contenedor-general">
     @for (cerv of cervezas; track cerv.id){
-
-    <div class="contenedor-cerveza">
+         <div class="contenedor-cerveza">
 
         <div class="contenedor-info">
             <p class="nombre">{{cerv.nombre}}</p>
-            <p>{{cerv.info}}</p>
+            <div class="contenedor-info">
+                <p>{{cerv.info}}</p>
+            </div>
+            <p>graduacion: {{cerv.graduacion}}</p>
         </div>
         
         <div class="contenedor-img">
-            <img src="imgs/cervezas/{{cerv.img}}.jpg" alt="">
+            <!-- <img src="imgs/cervezas/{{cerv.img}}.jpg" alt=""> -->
         </div>
 
     </div>
     }
-</div>
+    </div>
+
+    <div class="contenedor-seccion-form">
+        <div class="contenedor-form">
+
+        <div class="contenedor-texto">
+            <h2>Carga nuevos productos aqui</h2>
+        </div>
+
+            <div class="form">
+            <form (ngSubmit)="agregar()" #formu="ngForm">
+
+            <label for="nombre">Nombre</label>
+            <input [(ngModel)]="cerveza.nombre" name="nombre" id="nombre" type="text" placeholder="Escribe el nombre aquí..." required>
+
+            <label for="descripcion">Descripcion</label>
+            <textarea [(ngModel)]="cerveza.info" name="descripcion" id="descripcion" placeholder="Escribe la descripcion aqui..." id=""></textarea>
+
+            <label for="graduacion">Graduacion</label>
+            <input [(ngModel)]="cerveza.graduacion" name="graduacion" id="graduacion" type="text" placeholder="Escribe la graduacion alcholica aquí..." required>
+
+            <input [disabled]="!formu.valid" type="submit" value="Cargar Nueva Cerveza">
+
+            </form>
+            </div>
+
+        </div>
+    </div>
 
 </div>
+

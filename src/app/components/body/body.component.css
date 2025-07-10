@@ -32,15 +32,24 @@
 
 .contenedor-ubicacion .contenedor-texto {
     display: grid;
+    height: fit-content;
     justify-content: center;
     padding: 1vh 1vh 0 1vh ;
 }
 
-.contenedor-ubicacion .contenedor-titulo {
-    font-size: 22px;
+.contenedor-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
+}
+
+.contenedor-titulo h1 {
+    font-size: 40px;
+}
+
+.contenedor-ubicacion .contenedor-texto-conocenos {
+    margin-top: 30px;
 }
 
 .contenedor-ubicacion p {
@@ -56,6 +65,7 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 400px;
 }
 
 .contenedor-flecha {
@@ -87,4 +97,25 @@ img {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+
+    .contenedor-general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contenedor-ubicacion {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .contenedor-ubicacion img {
+        width: 400px;
+    }
+
 }
