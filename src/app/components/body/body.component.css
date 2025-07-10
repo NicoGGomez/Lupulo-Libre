@@ -118,4 +118,8 @@ img {
         width: 400px;
     }
 
+    .contenedor-ubicacion .contenedor-texto {
+    padding: 1vh 2vh 2vh 2vh ;
+    }
+
 }

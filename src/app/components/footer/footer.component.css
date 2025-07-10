@@ -26,3 +26,18 @@
     justify-content: center;
     padding: 2vh ;
 }
+
+.social-icons .fa {
+    width: 4vh;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.suscribir button {
+    margin-top: 1vh;
+}
