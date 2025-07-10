@@ -1,0 +1,42 @@
+.contenedor-general {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-form{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.contenedor-form .contenedor-texto {
+    display: grid;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.contenedor-general form {
+    margin-top: 7vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60vh;
+    gap: 2vh;
+    padding: 5vh;
+    font-size: 20px;
+}
+
+.contenedor-general form input {
+    height: 4vh;
+    width: 50vh;
+    padding: 3px;
+}
+
+.btn-login {
+    cursor: pointer;
+}

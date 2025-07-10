@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CervezasService, Cerveza } from '../../servicios/cervezas.service';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cervezas',
@@ -14,6 +15,7 @@ export class CervezasComponent implements OnInit {
   cervezas: Cerveza[] = [];
   loading = true;
   error = '';
+  logueado = false;
 
   cerveza : Cerveza = {
     id: 0,
@@ -23,9 +25,14 @@ export class CervezasComponent implements OnInit {
     img: ''
   }
 
-  constructor(private cervezasService: CervezasService) { }
+  constructor(private cervezasService: CervezasService, private route : ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    this.route.queryParams.subscribe(params => {
+    this.logueado = params['logueado'];
+
+
     this.cervezasService.getCervezas().subscribe({
       next: (data) => {
         this.cervezas = data;
@@ -36,6 +43,7 @@ export class CervezasComponent implements OnInit {
         console.error(err);
         this.loading = false;
       }
+    })
     })
   }
 

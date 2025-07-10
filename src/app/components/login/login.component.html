@@ -1,0 +1,26 @@
+<div class="fondo">
+    
+<div class="contenedor-general">
+
+    <div class="contenedor-form">
+
+        <div class="contenedor-texto">
+            <h2>Logueate para continuar</h2>
+        </div>
+
+        <form (ngSubmit)="onLogin()" #formulario="ngForm">
+
+        <label for="nombre">Nombre</label>
+        <input [(ngModel)]="user" id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre de usuario aquí..." required>
+
+        <label for="contra">Contraseña</label>
+        <input [(ngModel)]="password" id="contra" type="password" name="contra" placeholder="Escribe tu contraseña aquí..." required>
+
+        <input [disabled]="!formulario.valid" class="btn-login" type="submit" value="Login">
+    </form>
+
+    </div>
+
+</div>
+
+</div>

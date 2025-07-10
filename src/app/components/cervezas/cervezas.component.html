@@ -22,10 +22,11 @@
     <div class="contenedor-seccion-form">
         <div class="contenedor-form">
 
-        <div class="contenedor-texto">
-            <h2>Carga nuevos productos aqui</h2>
-        </div>
-
+            @if (logueado) {
+            <div class="contenedor-texto">
+                <h2>Carga nuevos productos aqui</h2>
+            </div>
+            
             <div class="form">
             <form (ngSubmit)="agregar()" #formu="ngForm">
 
@@ -42,6 +43,7 @@
 
             </form>
             </div>
+            }
 
         </div>
     </div>
