@@ -1,59 +1,51 @@
-# Proyecto02
+# 🍺 Tienda de Cervezas - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Bienvenido a **Tienda de Cervezas**, una aplicación web desarrollada con **Angular** donde podés explorar y gestionar una variedad de cervezas artesanales.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Funcionalidades
 
-```bash
-ng serve
-```
+- 🏠 Página **Home** con presentación de la tienda.
+- 📦 Sección **Productos** para ver todas las cervezas disponibles.
+- 📬 Formulario de **Contacto** para enviar consultas.
+- 🔐 Panel de **Administrador**:
+  - Login exclusivo para admins.
+  - Permite **agregar nuevas cervezas** al catálogo.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 👨‍💼 Acceso administrador
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Para ingresar como administrador y gestionar el contenido, usá las siguientes credenciales:
 
-```bash
-ng generate component component-name
-```
+🧑 Usuario: admin
+🔑 Contraseña: 1234
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📁 Estructura básica
 
-## Building
+src/
+├── app/
+│ ├── components/
+│ │ ├── body/
+│ │ ├── cervezas/
+│ │ ├── contacto/
+│ │ ├── footer/
+│ │ ├── header/
+│ │ └── login/
+│ ├── servicios/
+│ │ ├── cervezas.service.ts
+│ │ └── cervezas.service.spec.ts
 
-To build the project run:
+## 📚 Datos del estudiante
 
-```bash
-ng build
-```
+Nombre: Nicolás
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Apellido: Gómez
 
-## Running unit tests
+DNI: 45.399.781
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Email: anelecarg@gmail.com
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

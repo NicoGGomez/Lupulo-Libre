@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CervezasService, Cerveza } from '../../servicios/cervezas.service';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cervezas',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './cervezas.component.html',
   styleUrls: ['./cervezas.component.css']
 })
