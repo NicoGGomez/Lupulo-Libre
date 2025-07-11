@@ -24,21 +24,6 @@ Para ingresar como administrador y gestionar el contenido, usá las siguientes c
 
 ---
 
-## 📁 Estructura básica
-
-src/
-├── app/
-│ ├── components/
-│ │ ├── body/
-│ │ ├── cervezas/
-│ │ ├── contacto/
-│ │ ├── footer/
-│ │ ├── header/
-│ │ └── login/
-│ ├── servicios/
-│ │ ├── cervezas.service.ts
-│ │ └── cervezas.service.spec.ts
-
 ## 📚 Datos del estudiante
 
 Nombre: Nicolás
