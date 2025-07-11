@@ -1,6 +1,6 @@
-# 🍺 Tienda de Cervezas - Angular
+# 🍺 Lúpulo Libre - Angular
 
-Bienvenido a **Tienda de Cervezas**, una aplicación web desarrollada con **Angular** donde podés explorar y gestionar una variedad de cervezas artesanales.
+Bienvenido a **Lúpulo Libre**, una aplicación web desarrollada con **Angular** donde podés explorar y gestionar una variedad de cervezas artesanales.
 
 ---
 
